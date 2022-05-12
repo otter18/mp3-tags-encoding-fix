@@ -26,6 +26,6 @@ for filename in sorted(os.listdir()):
         audio[key] = [decode_(elem) for elem in vals]
 
     print('Now:', audio)
-    audio.save("result.mp3")
+    audio.save(f"{filename}-fixed.mp3")
 
     print('-' * 50)
